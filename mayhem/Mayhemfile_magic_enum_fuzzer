@@ -1,0 +1,8 @@
+project: magic-enum
+target: magic_enum_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/magic_enum_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/magic_enum_fuzzer
+    libfuzzer: true
